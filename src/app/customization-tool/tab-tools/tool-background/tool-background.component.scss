@@ -1,0 +1,29 @@
+:host{
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    color: #083361;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    display: block;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#show_bg>span{
+    padding-right: 15px;
+}
+
+.picker_container{
+    display: flex;
+    margin-top: 25px;
+}
+
+.picker_container_sub{
+    margin: auto;
+}

@@ -1,0 +1,33 @@
+<div id="show_logo">
+    <span>Show Logo</span>
+    <mat-slide-toggle [color]="color" [checked]="checked" [disabled]="disabled" (change)='toggleChange($event)'>
+    </mat-slide-toggle>
+</div>
+
+<div id="logo_radio">
+    <mat-radio-group [color]="color" (change)='radioChange($event)'>
+        <mat-radio-button value="logo1" [checked]="true">Logo 1</mat-radio-button>
+        <mat-radio-button value="logo2">Logo 2</mat-radio-button>
+        <mat-radio-button value="logo3">Logo 3</mat-radio-button>
+    </mat-radio-group>
+</div>
+
+
+<div class="picker_container">
+    <div class="picker_container_sub">
+        <rgba-color-picker [color]="colorPicker" (onColorChanged)="colorChanged($event)">
+        </rgba-color-picker>
+    </div>
+</div>
+
+<div>
+    <span>X</span>
+    <mat-slider thumbLabel [displayWith]="formatLabel" step="100" min="-1000" max="1000" [value]="currentX" aria-label="units"
+        (valueChange)='sliderValueXChange($event)'></mat-slider>
+
+    <span>Y</span>
+    <mat-slider thumbLabel [displayWith]="formatLabel" step="100" min="-1000" max="1000" [value]="currentY" aria-label="units"
+        (valueChange)='sliderValueYChange($event)'></mat-slider>
+
+        <button mat-raised-button (click)='resetPosition()'>Reset</button>
+</div>

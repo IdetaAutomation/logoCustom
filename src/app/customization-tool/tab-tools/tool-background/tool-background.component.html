@@ -1,0 +1,12 @@
+<div id="show_bg">
+    <span>Background</span>
+    <mat-slide-toggle class="example-margin" [color]="color" [checked]="checked" [disabled]="disabled"
+        (change)='toggleChange($event)'></mat-slide-toggle>
+</div>
+
+<div class="picker_container">
+  <div class="picker_container_sub">
+      <rgba-color-picker [color]="colorPicker" (onColorChanged)="colorChanged($event)">
+      </rgba-color-picker>
+  </div>
+</div>

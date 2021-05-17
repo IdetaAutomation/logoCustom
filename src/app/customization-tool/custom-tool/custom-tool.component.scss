@@ -1,0 +1,42 @@
+:host{
+    background-color: #3c3c3c;
+}
+
+
+#custom_tool{
+    display: flex;
+    padding-top: 50px;
+    height: 500px;
+}
+
+#custom_container{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#custom_container>p{
+    font-family: monospace;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+#tab_tools{
+    display: flex;
+    float: left;
+    width: 50%
+}
+
+#tab_tools>#sub_tab_tools{
+    margin: auto;
+    width: 600px;
+    border-radius: 5px;
+    //background-color: rgb(117 117 117 / 5%);
+    box-shadow: 2px 1px 20px 0px #0000002e;
+}
+
+svg{
+    display: block;
+    margin: auto;
+}

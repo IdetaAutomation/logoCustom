@@ -1,0 +1,30 @@
+<mat-tab-group animationDuration="500ms">
+    <mat-tab label="Logo">
+        <ng-template mat-tab-label>
+            <span>Logo</span>
+            <mat-icon>invert_colors</mat-icon>
+        </ng-template>
+        <app-tool-logo (hideLogoChanged)='hideLogoChange($event)' (logoChanged)='radioChange($event)'
+            (colorPickedChanged)='colorLogoEventChanged($event)' (sliderValueEvent)='sliderLogoChanged($event)'>
+        </app-tool-logo>
+    </mat-tab>
+
+    <mat-tab label="Text">
+        <ng-template mat-tab-label>
+            <span>Text</span>
+            <mat-icon>text_format</mat-icon>
+        </ng-template>
+        <app-tool-text (colorPickedChanged)='colorTextEventChanged($event)' (hideTextChanged)='hideTextChange($event)' (sliderValueEvent)='sliderTextChanged($event)'>
+        </app-tool-text>
+    </mat-tab>
+
+    <mat-tab label="Background">
+        <ng-template mat-tab-label>
+            <span>Background</span>
+            <mat-icon>format_paint</mat-icon>
+        </ng-template>
+        <app-tool-background (colorPickedChanged)='colorBgEventChanged($event)' (hideBgChanged)='hideBgChange($event)'>
+        </app-tool-background>
+    </mat-tab>
+
+</mat-tab-group>
